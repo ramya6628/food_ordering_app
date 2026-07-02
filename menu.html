@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food App - Menu</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🍽 Foodie App</h1>
+    <nav>
+        <a href="menu.html">Menu</a>
+        <a href="cart.html">Cart 🛒</a>
+        <a href="login.html" onclick="logout()">Logout</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Delicious Food, Delivered Fast 🚀</h2>
+    <p>Order your favourite food instantly</p>
+</section>
+
+<section class="menu">
+
+    <div class="card">
+        <h3>🍕 Pizza</h3>
+        <p>Cheesy delight</p>
+        <span>₹299</span>
+        <button onclick="addToCart('Pizza',299)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>🍔 Burger</h3>
+        <p>Juicy & tasty</p>
+        <span>₹149</span>
+        <button onclick="addToCart('Burger',149)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>🍗 Biryani</h3>
+        <p>Spicy & rich</p>
+        <span>₹249</span>
+        <button onclick="addToCart('Biryani',249)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>🥤 Cold Drink</h3>
+        <p>Refreshing</p>
+        <span>₹49</span>
+        <button onclick="addToCart('Cold Drink',49)">Add to Cart</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

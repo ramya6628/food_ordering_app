@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Food App</title>
+</head>
+<body>
+
+<h1>🍔 Register Page</h1>
+
+<form onsubmit="register(event)">
+
+    <label>Name</label><br>
+    <input type="text" id="name" placeholder="Enter Name"><br><br>
+
+    <label>Email</label><br>
+    <input type="email" id="email" placeholder="Enter Email"><br><br>
+
+    <label>Password</label><br>
+    <input type="password" id="password" placeholder="Enter Password"><br><br>
+
+    <button type="submit">Register</button>
+
+</form>
+
+<br>
+<p>Already have an account? <a href="/login">Login here</a></p>
+<button type="button" onclick="goToLogin()">Register</button>
+
+<script>
+function goToLogin() {
+    window.location.href = "/login";
+}
+</script>
+<script src="script.js"></script>
+
+</body>
+</html>

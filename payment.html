@@ -1,0 +1,48 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering - Payment</title>
+</head>
+<body>
+
+    <h1>💳 Payment</h1>
+
+    <form action="order-success.html">
+
+        <label>Customer Name</label><br>
+        <input type="text" placeholder="Enter your name" required><br><br>
+
+        <label>Payment Method</label><br>
+        <select required>
+            <option value="">--Select Payment Method--</option>
+            <option>Credit Card</option>
+            <option>Debit Card</option>
+            <option>UPI</option>
+            <option>Cash on Delivery</option>
+        </select><br><br>
+
+        <label>Card / UPI Number</label><br>
+        <input type="text" placeholder="Enter Card or UPI ID"><br><br>
+
+        <label>Total Amount</label><br>
+<input type="text" id="totalAmount" ><br><br>
+
+        
+
+    </form>
+
+    <br>
+
+    <a href="cart.html">
+        <button>⬅ Back to Cart</button>
+    </a>
+    <a href="order-success.html">
+    <button type="button">Pay Now</button>
+</a>
+<button onclick="logout()" class="btn-logout">Logout</button>
+</body>
+</html>
+
